@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DKAuthenticationViewController"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "Simple iOS authentication view controller"
 
   s.homepage     = "https://github.com/dkhamsing/DKAuthenticationViewController"
