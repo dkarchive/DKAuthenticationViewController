@@ -182,14 +182,14 @@ NS_ENUM(NSInteger, HM_loginSectionType) {
 }
 
 - (void)finishWithUser:(id)user signup:(BOOL)signup {
-    if (self.successBlock) {
-        self.successBlock(user, signup);
-    }
-    
     [self.hud hideInView:self.view animationDuration:self.hudAnimationDuration];
     [self.view endEditing:YES];
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        if (self.successBlock) {
+            self.successBlock(user, signup);
+        }
+    }];
 }
 
 - (void)twitterLoginWithAccount:(ACAccount *)account {
