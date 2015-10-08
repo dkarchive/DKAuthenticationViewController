@@ -29,6 +29,12 @@ Add the files in the DKAuthenticationViewController folder to your project.
     [self presentViewController:navigationController animated:YES completion:nil];
 ```
 
+`DKAuthenticationViewController` has two properties that use protocols to decouple functionality:
+- the `hud` property uses the [`DKHudProtocol`](https://github.com/dkhamsing/DKAuthenticationViewController/blob/master/DKAuthenticationViewController/DKHudProtocol.h) to display a loading spinner
+- the `authentication` property uses the [`DKAuthenticationProtocol`](https://github.com/dkhamsing/DKAuthenticationViewController/blob/master/DKAuthenticationViewController/DKAuthenticationProtocol.h) to login, sign up, logout, etc...
+
+To use a protocol, simply create an object that conforms to it (implements its methods) and assign it as a property to your instance of `DKAuthenticationViewController` (for `DKHudProtocol`, you would create an object that implements `- hideInView:animationDuration` and `- showInView:animationDuration`).
+
 # Demo
 
 DKAuthenticationViewController includes a demo project.
