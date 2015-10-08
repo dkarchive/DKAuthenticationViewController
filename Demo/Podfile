@@ -1,0 +1,4 @@
+target 'Demo' do
+  pod 'DKAuthenticationViewController', :path => '../'
+end
+

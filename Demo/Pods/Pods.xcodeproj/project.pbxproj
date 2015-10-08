@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08210A562BE9FD1FCC123514A27A157C /* OAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = E874C7579BEB18978C531A6F87EA659C /* OAuthCore.h */; };
+		111786899F0CB9DB3506A393ACB8FEE4 /* DKSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5813B29C418924755D62A7C31B034FB1 /* DKSignedRequest.m */; };
+		13FBC2E9522B7B564CE8431831B4EC9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FEBC517803A187C250616069EFB4EB /* Foundation.framework */; };
+		3A5ED21B0E081EDC48C9E0C447624CA0 /* OAuthCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3FD0314E9265049231EE0734C3546 /* OAuthCore-dummy.m */; };
+		3DC869D210F585D4D3C65EF22C094C0B /* OAuth+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = D8055906430521527145ACF3E944EF3B /* OAuth+Additions.h */; };
+		3DF936B2EC87B98E69FF18AF2659CDE7 /* DKTwitterReverseAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = B280F67F784C85D02A88E9E45262940E /* DKTwitterReverseAuth.m */; };
+		443F7D7A7A42D4E1B6945C58AA42710F /* DKAuthenticationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ECFC0780B2A8E44FEFF66C2C8FF74E8F /* DKAuthenticationViewController.h */; };
+		4518D900D3587347CAD4DA88B6B78DD1 /* DKHudProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFC0E764328282EC3BAE24CA767DBC1 /* DKHudProtocol.h */; };
+		480A196B33F92445BEF0102AB5C20AE1 /* DKAuthenticationViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 952E85FA376EE5419FA6D75BC96B2EE7 /* DKAuthenticationViewController-dummy.m */; };
+		48798F42CCC90ACDF71004C844CD370B /* NSData+Base64-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB109862D72142FD04F4EDAD47EA1C /* NSData+Base64-dummy.m */; };
+		57A09A0B1C6E02F64A93BA0311BD8453 /* DKAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E58F671A5D21E1E1C14DE9F9992FCA7A /* DKAPIManager.h */; };
+		5CDE3060B407DB842E867442401A89D3 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AEBF3593E4AFBA66EAC6BD5025805A2 /* NSData+Base64.h */; };
+		5E5D6ECBCD32DCD7ED53639EAD4783BA /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 037408BEB6A4D8ED84D2386547153902 /* Pods-Demo-dummy.m */; };
+		674381AD4588A12FF4222048F6E757AA /* DKAuthenticationInputCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2419DB3B24F7558621BAF9B3007A1649 /* DKAuthenticationInputCell.h */; };
+		853E7BA0ED8A7267D498CFA833B254A1 /* DKAuthenticationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3317798C3017EBD3295648FBBD2CDA80 /* DKAuthenticationProtocol.h */; };
+		AEDB01F37FC2E0E6A459B53AD5E7B095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FEBC517803A187C250616069EFB4EB /* Foundation.framework */; };
+		B4A7DC798D165E17638418B0F83524E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FEBC517803A187C250616069EFB4EB /* Foundation.framework */; };
+		BCD220C55E0604C0A81FEC2F11D21DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FEBC517803A187C250616069EFB4EB /* Foundation.framework */; };
+		BEB3F2442F5005E21E3F274082529D75 /* DKAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7686396BA3ED5C82A1B2FEAB0F9803D /* DKAPIManager.m */; };
+		C5D87FE239F51EA51DC9363038297147 /* DKAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0823D9A7E0E0D285322F7D9CD2B3E3A0 /* DKAuthenticationViewController.m */; };
+		C90EE440BCFB546235E2D7DA78FB2F43 /* DKSignedRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F97B6B80B8DDA8291F0B366C0C355C45 /* DKSignedRequest.h */; };
+		CDB949BA8E49E75DAEBA59C1546567E2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F123A1834F1C598D7D47A679A2D07E94 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D067487A788B6ADBC755E71D413952EF /* DKTwitterReverseAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2C42DC92973B2320FE37C6B2F4FBB8 /* DKTwitterReverseAuth.h */; };
+		D39817746A07190B23DEE9C90CB9B827 /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26A8B9FCF60423D379C978D6F73EC9 /* OAuthCore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D7937CC9CCD057A03807181F8954A00F /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068041B6A5221474AC55149EF1014D /* OAuth+Additions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DF21F42EE83A13F77AF3665B9E09390C /* DKTwitterReverseAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F64A91A80DFD73B285E194FD1EC4A1 /* DKTwitterReverseAuth-dummy.m */; };
+		E82A8CA225A142E11B928CA8F0271301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FEBC517803A187C250616069EFB4EB /* Foundation.framework */; };
+		F2B06FD61E03722E6713DDCEA4BA35FB /* DKAuthenticationInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A6BFAF3961BBFF2B6C27B56A38B3C3 /* DKAuthenticationInputCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		179FDB40DA6CB1A3816321FA230ADCEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847EB3D7B9FB29EEAC6DDEBA0CE40F25;
+			remoteInfo = "NSData+Base64";
+		};
+		18F961516D9F06A841A201BDBBC14AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847EB3D7B9FB29EEAC6DDEBA0CE40F25;
+			remoteInfo = "NSData+Base64";
+		};
+		3790E5F314525B05655D97EB4A5E6A9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7480D23458AFC7B0817F017F6D140A97;
+			remoteInfo = OAuthCore;
+		};
+		4192D9499E62F3E71063354057F899E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7480D23458AFC7B0817F017F6D140A97;
+			remoteInfo = OAuthCore;
+		};
+		6F3BB177A0F99C5E392FB82897BEA395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24EA812901084159FA2FA50BDF3BAE9;
+			remoteInfo = DKAuthenticationViewController;
+		};
+		A519C4D88BF49EAEF9785EF96DF6E37B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF6D91DD0A65B6961AF14351C495098;
+			remoteInfo = DKTwitterReverseAuth;
+		};
+		D2B5A52DD00B1A934EABA7255EA5AC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF6D91DD0A65B6961AF14351C495098;
+			remoteInfo = DKTwitterReverseAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FA64BC58601BA3DA3BEA4687778484 /* Pods-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-resources.sh"; sourceTree = "<group>"; };
+		037408BEB6A4D8ED84D2386547153902 /* Pods-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-dummy.m"; sourceTree = "<group>"; };
+		049ECBE0684090579D0E9AC33A9DA92E /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0823D9A7E0E0D285322F7D9CD2B3E3A0 /* DKAuthenticationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DKAuthenticationViewController.m; sourceTree = "<group>"; };
+		0C7A8DBD1B5A34D1E017FADCC08FEDFB /* NSData+Base64-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64-prefix.pch"; sourceTree = "<group>"; };
+		2419DB3B24F7558621BAF9B3007A1649 /* DKAuthenticationInputCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKAuthenticationInputCell.h; sourceTree = "<group>"; };
+		28A6BFAF3961BBFF2B6C27B56A38B3C3 /* DKAuthenticationInputCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DKAuthenticationInputCell.m; sourceTree = "<group>"; };
+		3317798C3017EBD3295648FBBD2CDA80 /* DKAuthenticationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKAuthenticationProtocol.h; sourceTree = "<group>"; };
+		4470F196014D3E23266ABE3E5598EDFA /* OAuthCore-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OAuthCore-Private.xcconfig"; sourceTree = "<group>"; };
+		45C24BCD8E353960893D08A005ADF26D /* NSData+Base64.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSData+Base64.xcconfig"; sourceTree = "<group>"; };
+		4A5725F22DF1C5F029807E0E2F018CE5 /* NSData+Base64-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSData+Base64-Private.xcconfig"; sourceTree = "<group>"; };
+		4F016BB32DC156C8AA13ED4FCCD7C03D /* DKAuthenticationViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DKAuthenticationViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		5813B29C418924755D62A7C31B034FB1 /* DKSignedRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKSignedRequest.m; path = DKTwitterReverseAuth/DKSignedRequest.m; sourceTree = "<group>"; };
+		61B919C36691C45C6347C9132639134A /* OAuthCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthCore-prefix.pch"; sourceTree = "<group>"; };
+		6841F733331E8F801796C48738F03DB5 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D924D672294FE216662FD7EE84C6536 /* libDKAuthenticationViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDKAuthenticationViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AEBF3593E4AFBA66EAC6BD5025805A2 /* NSData+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		7B26A8B9FCF60423D379C978D6F73EC9 /* OAuthCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OAuthCore.m; sourceTree = "<group>"; };
+		7CEDFE866CAF916901E88B566C6AD6B3 /* libOAuthCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOAuthCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		83324BFB055B45BE4D5830892AE96F5B /* DKTwitterReverseAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKTwitterReverseAuth-prefix.pch"; sourceTree = "<group>"; };
+		8F1ED31BBDD3532F67AF4F8EC180E628 /* DKAuthenticationViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKAuthenticationViewController-prefix.pch"; sourceTree = "<group>"; };
+		952E85FA376EE5419FA6D75BC96B2EE7 /* DKAuthenticationViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKAuthenticationViewController-dummy.m"; sourceTree = "<group>"; };
+		9C2C42DC92973B2320FE37C6B2F4FBB8 /* DKTwitterReverseAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKTwitterReverseAuth.h; path = DKTwitterReverseAuth/DKTwitterReverseAuth.h; sourceTree = "<group>"; };
+		A0FEBC517803A187C250616069EFB4EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A8F64A91A80DFD73B285E194FD1EC4A1 /* DKTwitterReverseAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKTwitterReverseAuth-dummy.m"; sourceTree = "<group>"; };
+		ABC3FD0314E9265049231EE0734C3546 /* OAuthCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuthCore-dummy.m"; sourceTree = "<group>"; };
+		B1E827B766076F8D45E273F47D98D5E7 /* DKTwitterReverseAuth-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DKTwitterReverseAuth-Private.xcconfig"; sourceTree = "<group>"; };
+		B280F67F784C85D02A88E9E45262940E /* DKTwitterReverseAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKTwitterReverseAuth.m; path = DKTwitterReverseAuth/DKTwitterReverseAuth.m; sourceTree = "<group>"; };
+		B6BB109862D72142FD04F4EDAD47EA1C /* NSData+Base64-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB3AB33385BFBE412869080E4F7FDFCB /* DKAuthenticationViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKAuthenticationViewController.xcconfig; sourceTree = "<group>"; };
+		BD994377E54F6EFC1872F2C11A0D5292 /* libNSData+Base64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNSData+Base64.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C76AA2FCB9437C4ED8BAE1BA6E01FA /* DKTwitterReverseAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKTwitterReverseAuth.xcconfig; sourceTree = "<group>"; };
+		CA89D5C3759A91D63DE1072D4DA560A7 /* libDKTwitterReverseAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDKTwitterReverseAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD423F17DBCA99406FD605152D8B69E /* Pods-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8055906430521527145ACF3E944EF3B /* OAuth+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuth+Additions.h"; sourceTree = "<group>"; };
+		E405A8C0C5B594B23D3CCCB2DC3E78AB /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		E58F671A5D21E1E1C14DE9F9992FCA7A /* DKAPIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKAPIManager.h; path = DKTwitterReverseAuth/DKAPIManager.h; sourceTree = "<group>"; };
+		E874C7579BEB18978C531A6F87EA659C /* OAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OAuthCore.h; sourceTree = "<group>"; };
+		ECFC0780B2A8E44FEFF66C2C8FF74E8F /* DKAuthenticationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKAuthenticationViewController.h; sourceTree = "<group>"; };
+		F123A1834F1C598D7D47A679A2D07E94 /* NSData+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		F7077BDF0B1360BAF497356A783E30CB /* OAuthCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuthCore.xcconfig; sourceTree = "<group>"; };
+		F7686396BA3ED5C82A1B2FEAB0F9803D /* DKAPIManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKAPIManager.m; path = DKTwitterReverseAuth/DKAPIManager.m; sourceTree = "<group>"; };
+		F97B6B80B8DDA8291F0B366C0C355C45 /* DKSignedRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKSignedRequest.h; path = DKTwitterReverseAuth/DKSignedRequest.h; sourceTree = "<group>"; };
+		FA068041B6A5221474AC55149EF1014D /* OAuth+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuth+Additions.m"; sourceTree = "<group>"; };
+		FBDD3BC1EE669A6DABBB98363D75665F /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		FDFC0E764328282EC3BAE24CA767DBC1 /* DKHudProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DKHudProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05CD04B2E36EC235C291C8D3765AACB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FBC2E9522B7B564CE8431831B4EC9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B56080B776AADC3E827E1C7371B57A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD220C55E0604C0A81FEC2F11D21DE1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B49C8CFEE789DB5B2C9D20E3F64A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDB01F37FC2E0E6A459B53AD5E7B095 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C223E58BFE1D2A887CA48504722D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A7DC798D165E17638418B0F83524E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD926076216ED6B4EFD8BE86ED82E5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82A8CA225A142E11B928CA8F0271301 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007DFEA27F6F6C98B5AC4912EA144571 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A7588EC8FA3F988C3D6E3C436009D99 /* DKAuthenticationViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		20CED91367C088047550B4A2A1E48408 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8C76AA2FCB9437C4ED8BAE1BA6E01FA /* DKTwitterReverseAuth.xcconfig */,
+				B1E827B766076F8D45E273F47D98D5E7 /* DKTwitterReverseAuth-Private.xcconfig */,
+				A8F64A91A80DFD73B285E194FD1EC4A1 /* DKTwitterReverseAuth-dummy.m */,
+				83324BFB055B45BE4D5830892AE96F5B /* DKTwitterReverseAuth-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DKTwitterReverseAuth";
+			sourceTree = "<group>";
+		};
+		337343C829874C585F83ADE238B60308 /* OAuthCore */ = {
+			isa = PBXGroup;
+			children = (
+				D8055906430521527145ACF3E944EF3B /* OAuth+Additions.h */,
+				FA068041B6A5221474AC55149EF1014D /* OAuth+Additions.m */,
+				E874C7579BEB18978C531A6F87EA659C /* OAuthCore.h */,
+				7B26A8B9FCF60423D379C978D6F73EC9 /* OAuthCore.m */,
+				F6FEF3851F376AD44405968FA15E8310 /* Support Files */,
+			);
+			path = OAuthCore;
+			sourceTree = "<group>";
+		};
+		4F7734C7551AC959803875A768545C17 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8C07A0ADC5CD61A77E20D153662E51D /* Pods-Demo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A0FEBC517803A187C250616069EFB4EB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		56C3E047A4416B6533A782F2C0FDB6BA /* DKTwitterReverseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				E58F671A5D21E1E1C14DE9F9992FCA7A /* DKAPIManager.h */,
+				F7686396BA3ED5C82A1B2FEAB0F9803D /* DKAPIManager.m */,
+				F97B6B80B8DDA8291F0B366C0C355C45 /* DKSignedRequest.h */,
+				5813B29C418924755D62A7C31B034FB1 /* DKSignedRequest.m */,
+				9C2C42DC92973B2320FE37C6B2F4FBB8 /* DKTwitterReverseAuth.h */,
+				B280F67F784C85D02A88E9E45262940E /* DKTwitterReverseAuth.m */,
+				20CED91367C088047550B4A2A1E48408 /* Support Files */,
+			);
+			path = DKTwitterReverseAuth;
+			sourceTree = "<group>";
+		};
+		66F619DE11F73948F0DD6FFA84B10781 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56C3E047A4416B6533A782F2C0FDB6BA /* DKTwitterReverseAuth */,
+				8646EAE0D1D96A673E99D96A7DE9F517 /* NSData+Base64 */,
+				337343C829874C585F83ADE238B60308 /* OAuthCore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6AAB389F74F07EE40EAD8F4759AFD0C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB3AB33385BFBE412869080E4F7FDFCB /* DKAuthenticationViewController.xcconfig */,
+				4F016BB32DC156C8AA13ED4FCCD7C03D /* DKAuthenticationViewController-Private.xcconfig */,
+				952E85FA376EE5419FA6D75BC96B2EE7 /* DKAuthenticationViewController-dummy.m */,
+				8F1ED31BBDD3532F67AF4F8EC180E628 /* DKAuthenticationViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/DKAuthenticationViewController";
+			sourceTree = "<group>";
+		};
+		7A7588EC8FA3F988C3D6E3C436009D99 /* DKAuthenticationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D8DC68E161B1A8248D2F150B956D8803 /* DKAuthenticationViewController */,
+				6AAB389F74F07EE40EAD8F4759AFD0C8 /* Support Files */,
+			);
+			name = DKAuthenticationViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				007DFEA27F6F6C98B5AC4912EA144571 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				66F619DE11F73948F0DD6FFA84B10781 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				4F7734C7551AC959803875A768545C17 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85ECE1679A8A96718997D8378A1139FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45C24BCD8E353960893D08A005ADF26D /* NSData+Base64.xcconfig */,
+				4A5725F22DF1C5F029807E0E2F018CE5 /* NSData+Base64-Private.xcconfig */,
+				B6BB109862D72142FD04F4EDAD47EA1C /* NSData+Base64-dummy.m */,
+				0C7A8DBD1B5A34D1E017FADCC08FEDFB /* NSData+Base64-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NSData+Base64";
+			sourceTree = "<group>";
+		};
+		8646EAE0D1D96A673E99D96A7DE9F517 /* NSData+Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				7AEBF3593E4AFBA66EAC6BD5025805A2 /* NSData+Base64.h */,
+				F123A1834F1C598D7D47A679A2D07E94 /* NSData+Base64.m */,
+				85ECE1679A8A96718997D8378A1139FC /* Support Files */,
+			);
+			path = "NSData+Base64";
+			sourceTree = "<group>";
+		};
+		B8C07A0ADC5CD61A77E20D153662E51D /* Pods-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				049ECBE0684090579D0E9AC33A9DA92E /* Pods-Demo-acknowledgements.markdown */,
+				CAD423F17DBCA99406FD605152D8B69E /* Pods-Demo-acknowledgements.plist */,
+				037408BEB6A4D8ED84D2386547153902 /* Pods-Demo-dummy.m */,
+				01FA64BC58601BA3DA3BEA4687778484 /* Pods-Demo-resources.sh */,
+				E405A8C0C5B594B23D3CCCB2DC3E78AB /* Pods-Demo.debug.xcconfig */,
+				FBDD3BC1EE669A6DABBB98363D75665F /* Pods-Demo.release.xcconfig */,
+			);
+			name = "Pods-Demo";
+			path = "Target Support Files/Pods-Demo";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D924D672294FE216662FD7EE84C6536 /* libDKAuthenticationViewController.a */,
+				CA89D5C3759A91D63DE1072D4DA560A7 /* libDKTwitterReverseAuth.a */,
+				BD994377E54F6EFC1872F2C11A0D5292 /* libNSData+Base64.a */,
+				7CEDFE866CAF916901E88B566C6AD6B3 /* libOAuthCore.a */,
+				6841F733331E8F801796C48738F03DB5 /* libPods-Demo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8DC68E161B1A8248D2F150B956D8803 /* DKAuthenticationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2419DB3B24F7558621BAF9B3007A1649 /* DKAuthenticationInputCell.h */,
+				28A6BFAF3961BBFF2B6C27B56A38B3C3 /* DKAuthenticationInputCell.m */,
+				3317798C3017EBD3295648FBBD2CDA80 /* DKAuthenticationProtocol.h */,
+				ECFC0780B2A8E44FEFF66C2C8FF74E8F /* DKAuthenticationViewController.h */,
+				0823D9A7E0E0D285322F7D9CD2B3E3A0 /* DKAuthenticationViewController.m */,
+				FDFC0E764328282EC3BAE24CA767DBC1 /* DKHudProtocol.h */,
+			);
+			path = DKAuthenticationViewController;
+			sourceTree = "<group>";
+		};
+		F6FEF3851F376AD44405968FA15E8310 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7077BDF0B1360BAF497356A783E30CB /* OAuthCore.xcconfig */,
+				4470F196014D3E23266ABE3E5598EDFA /* OAuthCore-Private.xcconfig */,
+				ABC3FD0314E9265049231EE0734C3546 /* OAuthCore-dummy.m */,
+				61B919C36691C45C6347C9132639134A /* OAuthCore-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OAuthCore";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		029746D5A67102393C4645C8CBB4CBDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674381AD4588A12FF4222048F6E757AA /* DKAuthenticationInputCell.h in Headers */,
+				853E7BA0ED8A7267D498CFA833B254A1 /* DKAuthenticationProtocol.h in Headers */,
+				443F7D7A7A42D4E1B6945C58AA42710F /* DKAuthenticationViewController.h in Headers */,
+				4518D900D3587347CAD4DA88B6B78DD1 /* DKHudProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7E2C212BF6B1725A1BDB6DFBD154D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC869D210F585D4D3C65EF22C094C0B /* OAuth+Additions.h in Headers */,
+				08210A562BE9FD1FCC123514A27A157C /* OAuthCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE3E17469342E4CE19CA64A091268C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDE3060B407DB842E867442401A89D3 /* NSData+Base64.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73049EDB76C23F4C8C24CF4B4B6D612 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A09A0B1C6E02F64A93BA0311BD8453 /* DKAPIManager.h in Headers */,
+				C90EE440BCFB546235E2D7DA78FB2F43 /* DKSignedRequest.h in Headers */,
+				D067487A788B6ADBC755E71D413952EF /* DKTwitterReverseAuth.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7480D23458AFC7B0817F017F6D140A97 /* OAuthCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DAAF37BD8440029020D343C57295DE /* Build configuration list for PBXNativeTarget "OAuthCore" */;
+			buildPhases = (
+				E0635691308A682D4C0A88701036CC03 /* Sources */,
+				CD926076216ED6B4EFD8BE86ED82E5FF /* Frameworks */,
+				4A7E2C212BF6B1725A1BDB6DFBD154D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				713CB9CC3849FDC2D8223A964741DC1B /* PBXTargetDependency */,
+			);
+			name = OAuthCore;
+			productName = OAuthCore;
+			productReference = 7CEDFE866CAF916901E88B566C6AD6B3 /* libOAuthCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		847EB3D7B9FB29EEAC6DDEBA0CE40F25 /* NSData+Base64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BFF48F0669EB306BEC15B5EFF91FA1B /* Build configuration list for PBXNativeTarget "NSData+Base64" */;
+			buildPhases = (
+				88D7BF617C4FC7961F9141363B988EC2 /* Sources */,
+				95B49C8CFEE789DB5B2C9D20E3F64A85 /* Frameworks */,
+				5FE3E17469342E4CE19CA64A091268C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSData+Base64";
+			productName = "NSData+Base64";
+			productReference = BD994377E54F6EFC1872F2C11A0D5292 /* libNSData+Base64.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AAF6D91DD0A65B6961AF14351C495098 /* DKTwitterReverseAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A48559F24531DDDD19BECACCC646257D /* Build configuration list for PBXNativeTarget "DKTwitterReverseAuth" */;
+			buildPhases = (
+				A0D771067EFBAE63064DE622C745BFC4 /* Sources */,
+				05CD04B2E36EC235C291C8D3765AACB8 /* Frameworks */,
+				A73049EDB76C23F4C8C24CF4B4B6D612 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46C4AACF4B40B245E766D7815348855 /* PBXTargetDependency */,
+			);
+			name = DKTwitterReverseAuth;
+			productName = DKTwitterReverseAuth;
+			productReference = CA89D5C3759A91D63DE1072D4DA560A7 /* libDKTwitterReverseAuth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24EA812901084159FA2FA50BDF3BAE9 /* DKAuthenticationViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFED49BAA39441B3B55E9FE8D28C7151 /* Build configuration list for PBXNativeTarget "DKAuthenticationViewController" */;
+			buildPhases = (
+				3938E6B4E61E5E3FBB72361DB289D924 /* Sources */,
+				A4C223E58BFE1D2A887CA48504722D94 /* Frameworks */,
+				029746D5A67102393C4645C8CBB4CBDF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CE9ADCC471F187A9C11D265F331F61F /* PBXTargetDependency */,
+			);
+			name = DKAuthenticationViewController;
+			productName = DKAuthenticationViewController;
+			productReference = 6D924D672294FE216662FD7EE84C6536 /* libDKAuthenticationViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CB4D00CF3F512C3EA5F440EC1519A794 /* Pods-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E3049254B6638A9F672B806E6599E1 /* Build configuration list for PBXNativeTarget "Pods-Demo" */;
+			buildPhases = (
+				F4D189779126E839B221161C563E20EE /* Sources */,
+				0B56080B776AADC3E827E1C7371B57A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8C5D92A6E4E867F4D97E354F10361E8 /* PBXTargetDependency */,
+				AFF64D405CDDC58FB0FC97BF3A3BB54A /* PBXTargetDependency */,
+				69D18D6E649F97F53C1AE00C9B39E621 /* PBXTargetDependency */,
+				9E664A7A51E9AEDF078CF6C2749C3537 /* PBXTargetDependency */,
+			);
+			name = "Pods-Demo";
+			productName = "Pods-Demo";
+			productReference = 6841F733331E8F801796C48738F03DB5 /* libPods-Demo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B24EA812901084159FA2FA50BDF3BAE9 /* DKAuthenticationViewController */,
+				AAF6D91DD0A65B6961AF14351C495098 /* DKTwitterReverseAuth */,
+				847EB3D7B9FB29EEAC6DDEBA0CE40F25 /* NSData+Base64 */,
+				7480D23458AFC7B0817F017F6D140A97 /* OAuthCore */,
+				CB4D00CF3F512C3EA5F440EC1519A794 /* Pods-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3938E6B4E61E5E3FBB72361DB289D924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B06FD61E03722E6713DDCEA4BA35FB /* DKAuthenticationInputCell.m in Sources */,
+				480A196B33F92445BEF0102AB5C20AE1 /* DKAuthenticationViewController-dummy.m in Sources */,
+				C5D87FE239F51EA51DC9363038297147 /* DKAuthenticationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D7BF617C4FC7961F9141363B988EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48798F42CCC90ACDF71004C844CD370B /* NSData+Base64-dummy.m in Sources */,
+				CDB949BA8E49E75DAEBA59C1546567E2 /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D771067EFBAE63064DE622C745BFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB3F2442F5005E21E3F274082529D75 /* DKAPIManager.m in Sources */,
+				111786899F0CB9DB3506A393ACB8FEE4 /* DKSignedRequest.m in Sources */,
+				DF21F42EE83A13F77AF3665B9E09390C /* DKTwitterReverseAuth-dummy.m in Sources */,
+				3DF936B2EC87B98E69FF18AF2659CDE7 /* DKTwitterReverseAuth.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0635691308A682D4C0A88701036CC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7937CC9CCD057A03807181F8954A00F /* OAuth+Additions.m in Sources */,
+				3A5ED21B0E081EDC48C9E0C447624CA0 /* OAuthCore-dummy.m in Sources */,
+				D39817746A07190B23DEE9C90CB9B827 /* OAuthCore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D189779126E839B221161C563E20EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5D6ECBCD32DCD7ED53639EAD4783BA /* Pods-Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CE9ADCC471F187A9C11D265F331F61F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DKTwitterReverseAuth;
+			target = AAF6D91DD0A65B6961AF14351C495098 /* DKTwitterReverseAuth */;
+			targetProxy = D2B5A52DD00B1A934EABA7255EA5AC0F /* PBXContainerItemProxy */;
+		};
+		69D18D6E649F97F53C1AE00C9B39E621 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSData+Base64";
+			target = 847EB3D7B9FB29EEAC6DDEBA0CE40F25 /* NSData+Base64 */;
+			targetProxy = 179FDB40DA6CB1A3816321FA230ADCEB /* PBXContainerItemProxy */;
+		};
+		713CB9CC3849FDC2D8223A964741DC1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSData+Base64";
+			target = 847EB3D7B9FB29EEAC6DDEBA0CE40F25 /* NSData+Base64 */;
+			targetProxy = 18F961516D9F06A841A201BDBBC14AEF /* PBXContainerItemProxy */;
+		};
+		9E664A7A51E9AEDF078CF6C2749C3537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthCore;
+			target = 7480D23458AFC7B0817F017F6D140A97 /* OAuthCore */;
+			targetProxy = 4192D9499E62F3E71063354057F899E7 /* PBXContainerItemProxy */;
+		};
+		AFF64D405CDDC58FB0FC97BF3A3BB54A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DKTwitterReverseAuth;
+			target = AAF6D91DD0A65B6961AF14351C495098 /* DKTwitterReverseAuth */;
+			targetProxy = A519C4D88BF49EAEF9785EF96DF6E37B /* PBXContainerItemProxy */;
+		};
+		C8C5D92A6E4E867F4D97E354F10361E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DKAuthenticationViewController;
+			target = B24EA812901084159FA2FA50BDF3BAE9 /* DKAuthenticationViewController */;
+			targetProxy = 6F3BB177A0F99C5E392FB82897BEA395 /* PBXContainerItemProxy */;
+		};
+		E46C4AACF4B40B245E766D7815348855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthCore;
+			target = 7480D23458AFC7B0817F017F6D140A97 /* OAuthCore */;
+			targetProxy = 3790E5F314525B05655D97EB4A5E6A9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		370EA932D78986CAEFFF6AC45CD659C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4470F196014D3E23266ABE3E5598EDFA /* OAuthCore-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthCore/OAuthCore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		46AA7B4A462A06C76373518C55054CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4470F196014D3E23266ABE3E5598EDFA /* OAuthCore-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthCore/OAuthCore-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		658D31CECAE4DF70FB32FFBBCD48E926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F016BB32DC156C8AA13ED4FCCD7C03D /* DKAuthenticationViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DKAuthenticationViewController/DKAuthenticationViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6FC516DE1BFD42F481D6DC6447E3F2EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E827B766076F8D45E273F47D98D5E7 /* DKTwitterReverseAuth-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DKTwitterReverseAuth/DKTwitterReverseAuth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75CD8549B46880F7B4665004DC4319DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5725F22DF1C5F029807E0E2F018CE5 /* NSData+Base64-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSData+Base64/NSData+Base64-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		77FE433699527E73886F15EBE9298366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F016BB32DC156C8AA13ED4FCCD7C03D /* DKAuthenticationViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DKAuthenticationViewController/DKAuthenticationViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		83B0F7AB6365F2F82B750F41FA360637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E405A8C0C5B594B23D3CCCB2DC3E78AB /* Pods-Demo.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		942BB48A9839166673E939058FE1E537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E827B766076F8D45E273F47D98D5E7 /* DKTwitterReverseAuth-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DKTwitterReverseAuth/DKTwitterReverseAuth-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B0E8A180DA4D6605A472E3678D717AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5725F22DF1C5F029807E0E2F018CE5 /* NSData+Base64-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSData+Base64/NSData+Base64-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EC0A03CD9663716B6EC2F8132E9905E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDD3BC1EE669A6DABBB98363D75665F /* Pods-Demo.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E3049254B6638A9F672B806E6599E1 /* Build configuration list for PBXNativeTarget "Pods-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B0F7AB6365F2F82B750F41FA360637 /* Debug */,
+				EC0A03CD9663716B6EC2F8132E9905E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BFF48F0669EB306BEC15B5EFF91FA1B /* Build configuration list for PBXNativeTarget "NSData+Base64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E8A180DA4D6605A472E3678D717AF9 /* Debug */,
+				75CD8549B46880F7B4665004DC4319DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24DAAF37BD8440029020D343C57295DE /* Build configuration list for PBXNativeTarget "OAuthCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46AA7B4A462A06C76373518C55054CFC /* Debug */,
+				370EA932D78986CAEFFF6AC45CD659C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A48559F24531DDDD19BECACCC646257D /* Build configuration list for PBXNativeTarget "DKTwitterReverseAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942BB48A9839166673E939058FE1E537 /* Debug */,
+				6FC516DE1BFD42F481D6DC6447E3F2EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFED49BAA39441B3B55E9FE8D28C7151 /* Build configuration list for PBXNativeTarget "DKAuthenticationViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658D31CECAE4DF70FB32FFBBCD48E926 /* Debug */,
+				77FE433699527E73886F15EBE9298366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
