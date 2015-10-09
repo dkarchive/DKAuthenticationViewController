@@ -1,6 +1,6 @@
 # DKAuthenticationViewController
 
-Simple authentication view controller for iOS
+Simple authentication view controller for iOS using email, password or Twitter (system account picker).
 
 ![](Assets/demo.gif)
 
