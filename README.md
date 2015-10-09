@@ -26,7 +26,7 @@ Add the files in the DKAuthenticationViewController folder to your project.
     authController.passwordLength = 5;
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:authController];
-    [self presentViewController:navigationController animated:YES completion:nil];
+    [self presentViewController:navigationController animated:YES completion:nil]; // Should be presented modally with a navigation controller
 ```
 
 `DKAuthenticationViewController` has two properties that use protocols to decouple functionality:
@@ -41,7 +41,7 @@ DKAuthenticationViewController includes a demo project.
 
 # Dependencies
 
-DKAuthenticationViewController uses the Apple's [Accounts](https://developer.apple.com/library/prerelease/ios/documentation/Accounts/Reference/AccountsFrameworkRef/index.html) framework and [DKTwitterReverseAuth](https://github.com/dkhamsing/DKTwitterReverseAuth) for Twitter reverse authentication.
+DKAuthenticationViewController uses Apple's [Accounts](https://developer.apple.com/library/prerelease/ios/documentation/Accounts/Reference/AccountsFrameworkRef/index.html) framework and [DKTwitterReverseAuth](https://github.com/dkhamsing/DKTwitterReverseAuth) for Twitter reverse authentication.
 
 # Contact
 
