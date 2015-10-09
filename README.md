@@ -21,8 +21,9 @@ Add the files in the DKAuthenticationViewController folder to your project.
 
 ``` objc
     DKAuthenticationViewController *authController = [[DKAuthenticationViewController alloc] init];
+    authController.twitter = YES; // Optional
     authController.cellBackgroundColor = [UIColor lightGrayColor]; // Optional
-    authController.passwordLength = 5; // Validation password 
+    authController.passwordLength = 5; // Validate password 
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:authController];
     [self presentViewController:navigationController animated:YES completion:nil]; // Should be presented modally with a navigation controller
