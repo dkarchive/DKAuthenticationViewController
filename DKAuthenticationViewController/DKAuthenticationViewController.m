@@ -81,6 +81,10 @@ NS_ENUM(NSInteger, HM_loginSectionType) {
     // Setup
     self.title = @"Login";
     
+    if (self.passwordLength<1) {
+        self.passwordLength = 1;
+    }
+    
     self.hudAnimationDuration = .2;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(actionCancel)];
@@ -155,6 +159,15 @@ NS_ENUM(NSInteger, HM_loginSectionType) {
 }
 
 #pragma mark Override
+
+- (void)setPasswordLength:(NSInteger)passwordLength {
+    _passwordLength = passwordLength;
+    
+    if (passwordLength<1) {
+        NSLog(@"DKAuthenticationViewController password length desired is %@ however cannot be less than 1, defaulting to 1.", @(passwordLength));
+        passwordLength=1;
+    }
+}
 
 - (void)setTwitter:(BOOL)twitter {
     _twitter = twitter;
