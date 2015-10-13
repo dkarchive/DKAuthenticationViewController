@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DKAuthenticationViewController"
-  s.version      = "0.2"
+  s.version      = "0.2.1"
   s.summary      = "Simple iOS authentication view controller"
 
   s.homepage     = "https://github.com/dkhamsing/DKAuthenticationViewController"
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
    
   s.requires_arc = true
   
-  s.dependency 'DKTwitterReverseAuth'
+  s.dependency 'DKTwitterReverseAuth', '~> 0.1'
 
 end
