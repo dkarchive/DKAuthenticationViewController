@@ -294,7 +294,7 @@ NS_ENUM(NSInteger, HM_loginSectionType) {
         }];
     }
     else {
-        [self.authentication loginWithEmail:email password:password completion:^(id user, NSString *errorMessage) {            
+        [self.authentication loginWithEmail:email password:password completion:^(id user, NSString *errorMessage) {
             if (errorMessage) {
                 [self.hud hideInView:self.view animationDuration:self.hudAnimationDuration];
                 [self errorAlertMessage:errorMessage];
@@ -410,7 +410,9 @@ NS_ENUM(NSInteger, HM_loginSectionType) {
                     }
                     else {
                         if (accounts.count==1) {
-                            [self twitterLoginWithAccount:accounts.firstObject];
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [self twitterLoginWithAccount:accounts.firstObject];
+                            });
                             return ;
                         }
                         
