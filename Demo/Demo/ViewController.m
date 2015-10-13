@@ -29,7 +29,10 @@
     authController.twitter = YES;
     authController.cellBackgroundColor = [[self highlightColor] colorWithAlphaComponent:.1];
     authController.passwordLength = 5;
-    
+    authController.successBlock = ^void(id user, BOOL signup) {
+        NSLog(@"User %@ in 😎", signup?@"signed":@"logged");
+    };
+
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:authController];
     [self presentViewController:navigationController animated:YES completion:nil];
 }
