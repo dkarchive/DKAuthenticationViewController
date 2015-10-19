@@ -20,16 +20,16 @@ Add the files in the DKAuthenticationViewController folder to your project.
 ## Usage
 
 ``` objc
-    DKAuthenticationViewController *authController = [[DKAuthenticationViewController alloc] init];
-    authController.twitter = YES; // Optional
-    authController.cellBackgroundColor = [UIColor lightGrayColor]; // Optional
-    authController.passwordLength = 5; // Validate password 
-    authController.successBlock = ^void(id user, BOOL signup) {
-        NSLog(@"User %@ in 😎", signup?@"signed":@"logged");
-    };
+DKAuthenticationViewController *authController = [[DKAuthenticationViewController alloc] init];
+authController.twitter = YES; // Optional
+authController.cellBackgroundColor = [UIColor lightGrayColor]; // Optional
+authController.passwordLength = 5; // Validate password 
+authController.successBlock = ^void(id user, BOOL signup) {
+    NSLog(@"User %@ in 😎", signup?@"signed":@"logged");
+};
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:authController];
-    [self presentViewController:navigationController animated:YES completion:nil]; // Should be presented modally with a navigation controller
+UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:authController];
+[self presentViewController:navigationController animated:YES completion:nil]; // Should be presented modally with a navigation controller
 ```
 
 `DKAuthenticationViewController` has two properties that use protocols to decouple functionality:
