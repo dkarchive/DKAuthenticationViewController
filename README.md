@@ -40,7 +40,8 @@ To use a protocol, simply create an object that conforms to it (implements its m
 
 # Demo
 
-DKAuthenticationViewController includes a demo project.
+- DKAuthenticationViewController includes a demo project.
+- DKAuthenticationViewController is used in [DKParseAuth](https://github.com/dkhamsing/DKParseAuth).
 
 # Dependencies
 
